@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <section id="calculadora">
+            <div id="telaRes">
+                <div id="telaTop"><p id="telaEsquerda" ></p> <p id="telaDireita"></p></div>
+                <p id="telaMain"></p>
+            </div>
+            <div id="buttonsBox">
+                <button id="buttonAC" onclick="limpar()">AC</button>
+                <button id="buttonDiv" onclick="resposta('/')">/</button>
+                <button id="buttonMul" onclick="resposta('*')">*</button>
+                <button id="button7" onclick="resposta('7')">7</button>
+                <button id="button8" onclick="resposta('8')">8</button>
+                <button id="button9" onclick="resposta('9')">9</button>
+                <button id="buttonSub" onclick="resposta('-')">-</button>
+                <button id="button4" onclick="resposta('4')">4</button>
+                <button id="button5" onclick="resposta('5')">5</button>
+                <button id="button6" onclick="resposta('6')">6</button>
+                <button id="buttonSom" onclick="resposta('+')">+</button>
+                <button id="button1" onclick="resposta('1')">1</button>
+                <button id="button2" onclick="resposta('2')">2</button>
+                <button id="button3" onclick="resposta('3')">3</button>
+                <button id="buttonRes" onclick="calcular('=')">=</button>
+                <button id="button0" onclick="resposta('0')">0</button>
+                <button id="buttonDot" onclick="resposta('.')">.</button>    
+            </div>
+        </section> 
+        <footer>
+            <p>Coded by</p>
+            <p><a href="https://www.linkedin.com/in/gustavo-lucena-4a11b3214/" target="_blank">Gustavo Silva</a></p>
+        </footer>       
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

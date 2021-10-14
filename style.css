@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --azul0: #a6b8db;
+    --azul1: #131e61;
+    --amarelo0: #dac722;
+    --cinza0: #616161;
+    --cinza: #a8a8a8;
+}
+
+body{
+    background-color: var(--azul0);
+    font-family: monospace;
+}
+
+main{
+    width: 350px;
+    margin: auto;
+}
+
+#calculadora{
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+    max-width: 330px;
+    min-height: 350px;
+    padding: 5px;
+    border: 2px var(--azul1) solid;
+    border-radius: 8px;
+    margin: 250px 0 20px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
+}
+
+#telaRes{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    text-align: right;
+    line-height: 1em;
+    font-size: 1.5em;
+    width: 328px;
+    min-height: 51px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--cinza);
+}
+
+#telaTop{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#telaDireita, #telaEsquerda{
+    font-family: monospace;
+    color: var(--amarelo0);
+}
+
+#telaMain{
+    font-family: monospace;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+#buttonsBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+
+#buttonAC, #buttonDiv, #buttonMul, #button7, #button8, #button9, #button4, #button5, #button6, #button1, #button2, #button3, #button0, #buttonDot, #buttonRes, #buttonSub, #buttonSom{
+    width: 80px;
+    height: 60px;
+    background-color: var(--cinza0);
+    color: white;
+    border: none;
+    margin: 1px;
+}
+
+#buttonsBox button:hover{
+    cursor: pointer;
+    border: 1px solid var(--cinza);
+    color: black;
+}
+
+#buttonAC{
+    background-color: rgb(182, 66, 66);
+    width: 162px;
+}
+
+#buttonRes{
+    background-color: rgb(28, 77, 141);
+    height: 122px;
+}
+
+#button0{
+    width: 162px;
+    position: absolute;
+    top: 248px;
+}
+
+#buttonDot{
+    position: absolute;
+    top: 248px;
+    left: 164px;
+}
+
+button:hover{
+    color: black;
+    border: 1px rgb(202, 202, 202) solid;
+}
+
+footer p{
+    text-align: center;
+    font-family: monospace;
+}
+
+footer a{
+    text-decoration: none;
+    line-height: 1.3em;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
