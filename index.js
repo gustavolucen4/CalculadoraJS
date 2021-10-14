@@ -51,4 +51,3 @@ function verifica(argument){
       return
    }
 }
-
