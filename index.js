@@ -7,7 +7,10 @@ function resposta(num) {
 
    if(numero.length <= 20){
 
-      num = numero.replace('/0', 'Erro, divisão por 0')
+      numero = numero.replace('/0', 'Erro, divisão por 0')
+      if(numero == 'Erro, divisão por 0')
+         num = numero
+
       document.querySelector('#telaEsquerda').innerHTML += num 
       document.querySelector('#telaMain').innerHTML += num
    }else {
