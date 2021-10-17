@@ -7,6 +7,7 @@ function resposta(num) {
 
    if(numero.length <= 20){
 
+      num = numero.replace('/0', 'Erro, divisão por 0')
       document.querySelector('#telaEsquerda').innerHTML += num 
       document.querySelector('#telaMain').innerHTML += num
    }else {
