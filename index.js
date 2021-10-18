@@ -7,10 +7,6 @@ function resposta(num) {
 
    if(numero.length <= 20){
 
-      numero = numero.replace('/0', 'Erro, divisão por 0')
-      if(numero == 'Erro, divisão por 0')
-         num = numero
-
       document.querySelector('#telaEsquerda').innerHTML += num 
       document.querySelector('#telaMain').innerHTML += num
    }else {
@@ -28,11 +24,21 @@ function resposta(num) {
 function calcular(argument){
 
    const resultado = document.querySelector('#telaMain').innerHTML
-   if(resultado){
-      document.querySelector('#telaMain').innerHTML = eval(resultado)
-      document.querySelector('#telaDireita').innerHTML = `${argument}${eval(resultado)}`
+   let num
+  
+   num = resultado.search('/0')
+   if(num > 0){
+      document.querySelector('#telaMain').innerHTML = 'Erro, divisão por 0'
+      document.querySelector('#telaDireita').innerHTML = 'Erro, divisão por 0'
+      document.querySelector('#telaEsquerda').innerHTML = ' '
    }else{
-      document.querySelector('#telaMain').innerHTML = ' '
+
+      if(resultado){
+         document.querySelector('#telaMain').innerHTML = eval(resultado)
+         document.querySelector('#telaDireita').innerHTML = `${argument}${eval(resultado)}`
+      }else{
+         document.querySelector('#telaMain').innerHTML = ' '
+      }
    }
 }
 
