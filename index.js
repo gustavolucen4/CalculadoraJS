@@ -24,10 +24,9 @@ function resposta(num) {
 function calcular(argument){
 
    const resultado = document.querySelector('#telaMain').innerHTML
-   let num
-  
-   num = resultado.search('/0')
-   if(num > 0){
+   const divZero = resultado.search('/0')
+   
+   if(divZero > 0){
       document.querySelector('#telaMain').innerHTML = 'Erro, divisão por 0'
       document.querySelector('#telaDireita').innerHTML = 'Erro, divisão por 0'
       document.querySelector('#telaEsquerda').innerHTML = ' '
